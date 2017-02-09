@@ -22,14 +22,6 @@ public class CucumberStepDefs  {
     private static StatefulKnowledgeSession session;
     private static Purchase purchase;
 
-    @When("^I hear \"([^\"]*)\"$")
-    public void i_hear(String arg1) throws Throwable {
-    }
-
-    @Then("^I should say \"([^\"]*)\"$")
-    public void i_should_say(String arg1) throws Throwable {
-    }
-
     @When("^my purchase is for \"([^\"]*)\" dollars$")
     public void my_purchase_is_for_dollars(String orderDollars) throws Throwable {
 
