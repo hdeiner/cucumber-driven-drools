@@ -34,9 +34,7 @@ public class Purchase {
 		this.total = total;
 	}
 
-	public int getTacoCount() {
-		return tacoCount;
-	}
+	public int getTacoCount() { return tacoCount; }
 
 	public void setTacoCount(int tacoCount) {
 		this.tacoCount = tacoCount;
@@ -54,7 +52,5 @@ public class Purchase {
 		return discount;
 	}
 
-	public void setDiscount(BigDecimal discount) {
-		this.discount = discount;
-	}
+	public void setDiscount(BigDecimal discount) { this.discount = discount; }
 }

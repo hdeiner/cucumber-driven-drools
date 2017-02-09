@@ -43,12 +43,13 @@ public class CucumberStepDefs  {
             // initialize a session for usage
             session = knowledgeBase.newStatefulKnowledgeSession();
 
-            purchase = new Purchase();
-            purchase.setTotal(new BigDecimal(orderDollars));
-
         } catch(Throwable t) {
             t.printStackTrace();
         }
+
+        purchase = new Purchase();
+        purchase.setTotal(new BigDecimal(orderDollars));
+
     }
 
     @When("^my purchase \"([^\"]*)\" has  drinks$")
