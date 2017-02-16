@@ -52,7 +52,7 @@ public class CucumberStepDefs  {
 
     }
 
-    @When("^my purchase \"([^\"]*)\" has  drinks$")
+    @When("^my purchase \"([^\"]*)\" has drinks$")
     public void my_purchase_has_drinks(boolean wereDrinksInOrder) throws Throwable {
         purchase.setDrinkIncluded(wereDrinksInOrder);
     }

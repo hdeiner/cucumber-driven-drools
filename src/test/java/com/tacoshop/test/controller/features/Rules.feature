@@ -33,7 +33,7 @@ Feature: Taco Shop Discounts
 
   Scenario Outline: purchase a combo and get and extra 5% discount
     When my purchase is for "<orderTotal>" dollars
-    And my purchase "<hasDrinks>" has  drinks
+    And my purchase "<hasDrinks>" has drinks
     And my purchase has "<tacoCount>" tacos
     Then I should get a "<orderDiscount>" percent discount
 
