@@ -39,10 +39,8 @@ class Tacoshop {
 
         System.out.println("Order of $16 consisting of 4 tacos with drinks");
         purchase = new Purchase(new BigDecimal("16.00"), 4, true);
-
         FactHandle purchaseFact = session.insert(purchase);
         session.fireAllRules();
-
         System.out.println("Discount of " + purchase.getDiscount() + "%\n");
 
         session.dispose();

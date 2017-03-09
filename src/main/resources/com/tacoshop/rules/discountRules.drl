@@ -4,22 +4,22 @@ import com.tacoshop.model.Purchase
 import java.math.BigDecimal
 
 rule "purchase over 15 and less than 25 dollars"
-when
-	$p : Purchase ( total > 15 && <= 25 ) 
-then
-	$p.setDiscount(new BigDecimal("10"));
-end
+    when
+	    $p : Purchase ( total > 15 && <= 25 )
+    then
+	    $p.setDiscount(new BigDecimal("10"));
+    end
 
 rule "purchase over 25 dollars"
-when
-	$p : Purchase ( total > 25 )
-then
-	$p.setDiscount(new BigDecimal("15"));
-end
+    when
+	    $p : Purchase ( total > 25 )
+    then
+	    $p.setDiscount(new BigDecimal("15"));
+    end
 
 rule "purchase contains combo" salience -1
-when
-	$p : Purchase ( drinkIncluded, tacoCount >= 2 )
-then
-	$p.setDiscount($p.getDiscount().add(new BigDecimal("5")));
-end
+    when
+	    $p : Purchase ( drinkIncluded, tacoCount >= 2 )
+    then
+	    $p.setDiscount($p.getDiscount().add(new BigDecimal("5")));
+    end

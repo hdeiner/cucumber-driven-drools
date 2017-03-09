@@ -5,11 +5,8 @@ import java.math.BigDecimal;
 public class Purchase {
 
 	private BigDecimal total;
-	
 	private int tacoCount;
-	
 	private boolean drinkIncluded;
-	
 	private BigDecimal discount;
 
 	public Purchase() {
@@ -29,13 +26,11 @@ public class Purchase {
 	public BigDecimal getTotal() {
 		return total;
 	}
-
 	public void setTotal(BigDecimal total) {
 		this.total = total;
 	}
 
 	public int getTacoCount() { return tacoCount; }
-
 	public void setTacoCount(int tacoCount) {
 		this.tacoCount = tacoCount;
 	}
@@ -43,7 +38,6 @@ public class Purchase {
 	public boolean isDrinkIncluded() {
 		return drinkIncluded;
 	}
-
 	public void setDrinkIncluded(boolean drinkIncluded) {
 		this.drinkIncluded = drinkIncluded;
 	}
@@ -51,6 +45,5 @@ public class Purchase {
 	public BigDecimal getDiscount() {
 		return discount;
 	}
-
 	public void setDiscount(BigDecimal discount) { this.discount = discount; }
 }

@@ -111,7 +111,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>Instant Drools Starter</projectName>
+                            <projectName>Cucumber Driven Drools</projectName>
                             <outputDirectory>${project.build.directory}/controller-reports/cucumber-pretty-reports</outputDirectory>
                             <cucumberOutput>${project.build.directory}/controller-reports/controller-json-report.json</cucumberOutput>
                             <parallelTesting>false</parallelTesting>
